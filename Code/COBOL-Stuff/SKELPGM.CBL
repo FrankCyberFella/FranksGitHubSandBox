@@ -1,0 +1,15 @@
+        IDENTIFICATION DIVISION.
+        PROGRAM-ID. SAMPLPGM.
+        ENVIRONMENT DIVISION.
+        INPUT-OUTPUT SECTION.
+        FILE-CONTROL.
+        DATA DIVISION.
+        FILE SECTION.
+        
+        WORKING-STORAGE SECTION.
+        
+        LINKAGE SECTION.
+         
+        PROCEDURE DIVISION.
+         
+            GOBACK.
