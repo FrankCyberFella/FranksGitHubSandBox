@@ -14,7 +14,7 @@ public class ginzUtilities {
 	 * @param   decPlaces the number of decimal places requested in the result
 	 * @return  the string representation of the double value with the number of digits and decimal places requested; 
 	 *           value in result will be rounded to the number of decimal places requested.
-	 * @throws IllegalArgumentException if (1) minLen parameter is less than 0 or (2) decPlaces parameter is less than 0
+	 * @throws IllegalArgumentException if (1) minLen parameter is less than 1 or (2) decPlaces parameter is less than 0
 	 * <pre>{@code
      * Examples:
      * 
@@ -30,7 +30,7 @@ public class ginzUtilities {
 	
 	
 	public static String ginzDecFormat(double value, int minLen, int decPlaces) {
-	    if ((decPlaces < 0)||(minLen<0) ) throw new IllegalArgumentException();
+	    if ((decPlaces < 0)||(minLen<1) ) throw new IllegalArgumentException();
 	    
 	    String format = "%"+minLen+"."+decPlaces+"f";
 	   
