@@ -66,5 +66,26 @@ public class ginzUtilities {
 	    return decValue.doubleValue();
 	}
 	
+public static void ginzUtilitiesExamples() {
+		
+		System.out.println("ginzDecFormat(12.3456,5,3) returns \"" +  ginzUtilities.ginzDecFormat(12.3456,5,3) + '\"');
+		System.out.println("ginzDecFormat(12.3456,5,2) returns \"" +  ginzUtilities.ginzDecFormat(12.3456,5,2) + '\"');
+		System.out.println("ginzDecFormat(12.3456,5,1) returns \"" +  ginzUtilities.ginzDecFormat(12.3456,5,1) + '\"');
+		System.out.println("ginzDecFormat(12.3456,1,1) returns \"" +  ginzUtilities.ginzDecFormat(12.3456,1,1) + '\"');
+		System.out.println("ginzDecFormat(12.3456,5,0) returns \"" +  ginzUtilities.ginzDecFormat(12.3456,5,0) + '\"');
+		System.out.println("ginzDecFormat(12.3456,1,0) returns \"" +  ginzUtilities.ginzDecFormat(12.3456,1,0) + '\"');
+		System.out.println("ginzDecFormat(12.3456,5,5) returns \"" +  ginzUtilities.ginzDecFormat(12.3456,5,5) + '\"');
+		System.out.println("ginzDecFormat(12.9876,5,0) returns \"" +  ginzUtilities.ginzDecFormat(12.9876,5,0) + '\"');
+		System.out.println("ginzDecFormat(12.3456,5,6) returns \"" +  ginzUtilities.ginzDecFormat(12.3456,5,6) + '\"');
+		
+		System.out.println("------------------------------------------------");
+		System.out.println("Rounding 3.12345678 to 4 decimal places using   CEILING: " + ginzUtilities.ginzRound(3.12345678, 4, "CEILING"));
+		System.out.println("Rounding 3.12345678 to 4 decimal places using     FLOOR: " + ginzUtilities.ginzRound(3.12345678, 4, "FLOOR"));
+		System.out.println("Rounding 3.12345678 to 4 decimal places using        UP: " + ginzUtilities.ginzRound(3.12345678, 4, "UP"));
+		System.out.println("Rounding 3.12345678 to 4 decimal places using      DOWN: " + ginzUtilities.ginzRound(3.12345678, 4, "DOWN"));
+		System.out.println("Rounding 3.12345678 to 4 decimal places using   HALF_UP: " + ginzUtilities.ginzRound(3.12345678, 4, "HALF_UP"));
+		System.out.println("Rounding 3.12345678 to 4 decimal places using HALF_DOWN: " + ginzUtilities.ginzRound(3.12345678, 4, "HALF_DOWN"));
+
+	}
 	
 }
