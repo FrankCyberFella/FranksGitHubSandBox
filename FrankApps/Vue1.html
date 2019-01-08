@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Shopping List App</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div id="shopping-list">
+        <h1>{{ header ? header.toLocaleUpperCase() : 'welcome' }}</h1>
+        <input v-model="newItem" type="text" placeholder="Add a new item">
+        <ul>
+            <li v-for="item in items"> {{ item }}</li>
+        </ul>
+    </div>
+        <script src="https://unpkg.com/vue"></script>
+        <script>
+        let shoppingList = new Vue ({
+            el: '#shopping-list',
+            data: {
+                header: 'Shopping List App',
+                newItem:'',
+                items: [
+                    '10 party hats',
+                    '2 board games',
+                    '20 cups'
+                ]
+            }
+        })
+        </script>
+    </body>
+</html>

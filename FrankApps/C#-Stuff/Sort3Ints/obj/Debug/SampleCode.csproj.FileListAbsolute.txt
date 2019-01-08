@@ -1,0 +1,7 @@
+/Users/frankfella/BitBucketRepos/cyberginzo/FrankApps/C#-Stuff/SampleCode/bin/Debug/Variables-And-DataTypes.exe.config
+/Users/frankfella/BitBucketRepos/cyberginzo/FrankApps/C#-Stuff/SampleCode/bin/Debug/Variables-And-DataTypes.exe
+/Users/frankfella/BitBucketRepos/cyberginzo/FrankApps/C#-Stuff/SampleCode/bin/Debug/Variables-And-DataTypes.pdb
+/Users/frankfella/BitBucketRepos/cyberginzo/FrankApps/C#-Stuff/SampleCode/obj/Debug/SampleCode.csprojAssemblyReference.cache
+/Users/frankfella/BitBucketRepos/cyberginzo/FrankApps/C#-Stuff/SampleCode/obj/Debug/SampleCode.csproj.CoreCompileInputs.cache
+/Users/frankfella/BitBucketRepos/cyberginzo/FrankApps/C#-Stuff/SampleCode/obj/Debug/Variables-And-DataTypes.exe
+/Users/frankfella/BitBucketRepos/cyberginzo/FrankApps/C#-Stuff/SampleCode/obj/Debug/Variables-And-DataTypes.pdb

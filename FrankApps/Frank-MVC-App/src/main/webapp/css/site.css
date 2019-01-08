@@ -1,0 +1,286 @@
+/* header tags*/
+.container {
+	margin: 0 auto;
+	max-width: 700px;
+}
+
+/* nav bar */
+.container-fluid {
+	/* display: inline-block; */
+	background: url('http://www.bradysammons.com/codepen/darkui/noise.png');
+	background: -moz-url('http://www.bradysammons.com/codepen/darkui/noise.png');
+	border-color:url('http://www.bradysammons.com/codepen/darkui/noise.png');
+	border-color: -moz-url('http://www.bradysammons.com/codepen/darkui/noise.png');
+}
+
+#burger {
+	position: relative;
+    top: -7px; 
+    left: -17px;
+ 	}
+
+.header-bkgd {
+  background: url('http://i68.tinypic.com/288qfj9.jpg');
+  background-repeat: repeat-x;
+  height: 60px;
+}
+
+.still_on_view{
+    float: right;
+}
+
+.navbar-toggler {
+	display: none;
+	background: url('http://www.bradysammons.com/codepen/darkui/noise.png');
+	background: -moz-url('http://www.bradysammons.com/codepen/darkui/noise.png');
+}
+/*font and toggler*/
+.fa-1x {
+	font-size: 1.5rem;
+}
+
+.navbar-toggler.toggler-example {
+	cursor: pointer;
+}
+
+.nav-link.linktext {
+	color: #ef6c00;
+	font: 1em 'Open Sans', sans-serif;
+	/* font-weight: bold; */		
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 1.9);
+	margin: auto;
+	padding: 11px 40px 6px 10px;
+	
+}
+
+.nav-logo.linktext {
+	color: #ef6c00;
+	font: 1.75em 'Shrikhand', sans-serif;
+	/* font-weight: bold; */	
+	font-weight: 40;	
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 1.9);
+	margin: auto;
+	padding: 10px 40px 6px 5px;
+	
+}
+
+.nav-link.linktext:hover {
+	color: #ffbb33;
+	font: 1em 'Open Sans', sans-serif;
+	/* font-weight: bold; */		
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 1.9);
+	margin: auto;
+	/* padding: 11px 40px 6px 10px; */
+	background-color: transparent;
+}
+
+.nav-logo.linktext:hover {
+	color: #ef6c00;
+	font: 1.75em 'Shrikhand', sans-serif;
+	/* font-weight: bold; */	
+	font-weight: 40;		
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 1.9);
+	margin: auto;
+	padding: 10px 40px 6px 5px;
+	background-color: transparent;
+}
+
+/* .linktext{
+	color: #bf360c;
+	font: 1.75em 'PT Serif', serif;
+	text-shadow: 0 1px 0 rgba(0,0,0, 1.9);
+	margin: auto;
+    padding: 10px;
+} */
+
+#logoDesktop{
+	display:inline;
+}
+/*cookout details page*/
+
+p {
+	color: #616161;
+}
+
+label {
+	font: 1.125em 'Open Sans', sans-serif;
+	line-height: 100%;
+	font-weight: bold;
+	color: #616161;
+	font-weight: 400;
+}
+
+
+
+.detailName {
+	font: 2.35em 'Sanchez', serif;
+	/* text-shadow: 0 1px 0 rgba(0, 0, 0, 1.9); */
+	line-height: 110%;
+	color: #bf360c;
+}
+
+.detailNameCenter {
+	font: 2.35em 'Sanchez', serif;
+	/* text-shadow: 0 1px 0 rgba(0, 0, 0, 1.9); */
+	line-height: 110%;
+	color: #bf360c;
+	text-align: center;
+	
+}
+
+.detailBodyH {
+	font: 1.5em 'Open Sans', sans-serif;
+	line-height: 140%;
+	/* font-weight: bold; */
+	padding-bottom: 1em;
+	color: #ef6c00;
+	font-weight: 600;
+}
+
+.detailBodyH:hover {
+	text-decoration: none;
+}
+
+.detailBody {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.25em;
+	line-height: 130%;
+	color: #616161;
+}
+
+.detailMinor {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	line-height: 120%;
+	text-align: center;
+	color: #616161;
+}
+
+
+.detailBodySubhead {
+	font: 1.25em 'Open Sans', sans-serif;
+	line-height: 100%;
+	/* font-weight: bold; */
+	color: #ef6c00;
+	font-weight: 600;
+}
+
+.detailBodySubheadCol2 {
+	font: 1.25em 'Open Sans', sans-serif;
+	line-height: 100%;
+	font-weight: 600;
+}
+
+.lgSpacerBlock {
+	height: 3.25em;
+}
+
+.spacerBlock {
+	height: .95em;
+}
+
+.smSpacerBlock {
+	height: .5em;
+}
+
+.horizSpacerBlock {
+	width: 1.5em;
+}
+
+table.emailForm {
+border-collapse: separate;
+border-spacing: 0 1em;
+}
+
+li {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.25em;
+	line-height: 130%;
+	color: #616161;
+	
+}
+
+ul.guests {
+  list-style: none;
+}
+
+#inprogress {
+	background: #f12711; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #f5af19, #f12711);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#finished {
+	background: #56ab2f; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #a8e063, #56ab2f);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+i {
+  position: relative;
+  /* Adjust these values accordingly */
+  top: 4px;
+  right: 4px;
+
+}
+
+
+@media all and (max-width : 768px) {
+	/*body {display: none;}*/
+	#logoDesktop{
+	display:none;
+}
+	
+	
+	.nav-link.linktext {
+		color: #ef6c00;
+		font: 1em 'Open Sans', sans-serif;
+		/* font-weight: bold; */		
+		text-shadow: 0 1px 0 rgba(0, 0, 0, 1.9);
+		margin: auto;
+		padding: 5px 40px 6px 5px;			
+	}
+	.nav-link.logotext {
+		color: #ef6c00;
+		font: 1em 'Shrikhand', sans-serif;
+		/* font-weight: bold; */		
+		text-shadow: 0 1px 0 rgba(0, 0, 0, 1.9);
+		margin: auto;
+		padding: 5px 40px 6px 5px;			
+	}
+	
+	.navbar-toggler {
+		display: inherit;
+		margin: 1rem;
+		border-radius: 25%;
+		border: transparent;
+		border: -moz-transparent;
+	}
+	.navbar-toggler:focus {
+		outline: none;
+		display: inherit;
+		margin: 1rem;
+		border-radius: 25%;
+		border: transparent;
+		border: -moz-transparent;
+	}
+	.navbar-toggler:hover {
+		cursor: url(http://cur.cursors-4u.net/food/foo-7/foo637.cur), auto;
+	}
+	.navbar-nav>li {
+		float: none;
+	}
+	.navbar-nav {
+		float: none;
+	}
+	.nav.navbar-nav {
+		clear: both;
+		float: left;
+		margin: auto;
+		width: 100%;
+	}
+}
