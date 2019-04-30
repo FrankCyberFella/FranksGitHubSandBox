@@ -1,0 +1,88 @@
+:root {
+    --blue: #00adee;
+    --grey: #505355;
+}
+  
+* {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    box-sizing: border-box;
+    color: var(--grey);
+}
+
+html {
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+}
+
+#student-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "qt  qt  ico"
+                         "pr  pr  cnt"
+                         "ex  ex  ex"
+                         ".   des .";
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+}
+
+body {
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+#te-logo {
+    width: 25%;
+}
+
+main .headline {
+    font-size: 64px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+#student-quote {
+    font-size: 24px;
+    grid-area: qt;
+}
+
+#student-picture img {
+    display: block;
+    border-radius: 50%;
+    grid-area: ico;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#student-profile {
+    font-size: 20px;
+    grid-area: pr;
+}
+
+#student-contact {
+    text-align: center;
+    grid-area: cnt;
+}
+
+#experience > div {
+    width: 31%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#experience {
+    display: flex;
+    grid-area: ex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#experience div > h3{
+    color: var(--blue);
+}
+
+#experience div > h3 > i{
+    color: var(--blue);
+}

@@ -1,0 +1,18 @@
+Potato Crisps 3.05 Chip | 0
+Stackers 1.45 Chip | 0
+Grain Waves 2.75 Chip | 0
+Cloud Popcorn 3.65 Chip | 0
+Moonpie 1.8 Candy | 1
+Cowtales 1.5 Candy | 0
+Wonka Bar 1.5 Candy | 1
+Crunchie 1.75 Candy | 0
+Cola 1.25 Drink | 0
+Dr. Salt 1.5 Drink | 0
+Mountain Melter 1.5 Drink | 0
+Heavy 1.5 Drink | 0
+U-Chews 0.85 Gum | 0
+Little League Chew 0.95 Gum | 0
+Chiclets 0.75 Gum | 1
+Triplemint 0.75 Gum | 0
+
+**TOTAL SALES** $4.05

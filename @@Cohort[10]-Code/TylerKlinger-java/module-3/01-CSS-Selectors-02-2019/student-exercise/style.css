@@ -1,0 +1,101 @@
+:root {
+    --top-row-height: 150px;
+    --gutter: 20px;
+    --blue: #00adee;
+    --light-blue: rgba(0, 173, 238, 0.4);
+    --green: #8cc36f;
+    --light-green: rgba(170, 239, 135, 0.8);  
+    --bg-color: rgba(192, 192, 192, 0.1);
+    --subheading: rgba(0, 0, 0, 0.6);
+  }
+  html {
+  height: 100%;
+
+  font-size: 16px;
+  }
+
+  body {
+    font-family: 'Raleway', sans-serif;
+
+    background-image: linear-gradient(to bottom, var(--bg-color));
+
+    background-color: var(--bg-color);
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+  }
+  main {
+    margin-left: 220px;
+    display: inline-block;
+  }
+  aside {
+    position: fixed;
+    height: 100%;
+    border-right: 1px solid var(--blue);
+    width: 200px;
+    text-align: center;
+    background: rgb(240, 240, 240);
+    left: 0px;
+    top: 0px;
+  }
+  aside img {
+    width: 150px;
+    align-self: center;
+    padding-left: 10px;
+  
+  }
+  body aside li {
+    border-bottom: 1px solid var(--blue);
+    padding: 10px;
+    font-weight: bold;
+    color: var(--light-blue);
+    margin-right: 10px;
+    margin-left: 20px;
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  ul {
+    padding: 0;
+    margin: 0; 
+  }
+  a {
+    text-decoration: none;
+    color: var(--blue);
+  }
+  
+  main header img {
+    height: 110px;
+  }
+  main header p {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  section > div {
+    width: 33%;
+    border-right: 1px solid var(--green);
+    display: inline-block;
+  }
+  section div h2{
+    color: var(--green);
+  }
+  main > img {
+    width: 100%;
+  }
+  #contact-us {
+    border-right: none;/*removes border from contact-us child of parent div*/
+  }
+  footer h3 {
+    display: none;
+  }
+  footer div p {
+    display: none;
+  }
+  #logos {
+    text-align: center;
+  }
+  #logos img {
+    width: 50px;
+  }

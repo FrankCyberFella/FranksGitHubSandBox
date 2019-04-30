@@ -1,0 +1,157 @@
+body {
+	width: 100%;
+	background-color: #212121;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+		sans-serif;
+}
+
+body, header, nav {
+	margin: 0px;
+}
+
+header {
+	background-color: #0099CC;
+	color: white;
+	padding: 10px 10px;
+}
+
+nav {
+	background-color: #8DC63F;
+	margin-bottom: 20px;
+	padding: 5px;
+	height: 50px;
+}
+
+nav ul {
+	float: left;
+}
+
+nav li {
+	list-style-type: none;
+	color: white;
+	margin-left: 25px;
+	margin-bottom: 10px;
+	font-size: 1.3em;
+	float: left;
+}
+
+nav li a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	text-decoration: underline;
+}
+
+section {
+	clear: both;
+	display: block;
+	width: 80%;
+	margin: 20px auto;
+	vertical-align: top;
+	text-align: center;
+
+	background-color: #FFF;
+	border-radius: 7px;
+}
+#tile-wrapper{
+	display:flex;
+	width:100%;
+	flex-wrap:wrap;
+}
+.tile-card{
+	width:21%;
+	padding:2% 6% 2% 6%;
+}
+.tile-card *{
+	width:100%;
+}
+.bold{
+	font-weight:bold;
+}
+.red{
+	color:#F00;
+}
+.tile-money{
+	display:inline-block;
+	color:maroon;
+	font-size:18px;
+	margin-top:12px;
+}
+.tile-card img:last-of-type{
+	width:75%;
+}
+#list-wrapper{
+	display:flex;
+	width:100%;
+	flex-wrap:wrap;
+	
+}
+.img-wrapper{
+	margin-right:30px;
+}
+.list-card{
+	width:90%;
+	margin: 5px 5% 5px 5%;
+	padding: 10px 0 10px 0;
+	display:flex;
+	border-bottom:1px solid #CCC;
+}
+
+.detail-card{
+	width:90%;
+	margin: 5px 5% 5px 5%;
+	padding: 10px 0 10px 0;
+	display:flex;
+
+}
+#detail-image{
+	width:200px;
+}
+#detail-stars{
+	width:100px;
+}
+.detail-card *{
+	text-align:left;
+}
+.list-card img:first-of-type{
+
+	width:150px;
+	
+}
+.list-card img:last-of-type{
+	width:100px;
+}
+.list-card *{
+	text-align:left;
+}
+.list-money{
+	display:inline-block;
+	color:maroon;
+	font-size:18px;
+	margin-top:0;
+}
+table{
+	width:100%;
+}
+tbody{
+	width:100%;
+}
+tr{
+	width:100%;
+}
+tr:nth-child(even){
+	background:#CCC;
+}
+th{
+	
+}
+td{
+	width:12%;
+	padding: 0 1.5% 0 1.5%;
+}
+td *{
+	max-width:100%;
+}

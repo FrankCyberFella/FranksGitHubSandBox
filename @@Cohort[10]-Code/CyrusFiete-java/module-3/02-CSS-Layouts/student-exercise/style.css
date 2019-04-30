@@ -1,0 +1,81 @@
+:root {
+    --blue: #00adee;
+    --grey: #505355;
+}
+  
+* {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+#student-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "quote     quote     picture"
+    "profile   profile   caption"
+    "exp       exp       exp    ";
+    grid-row-gap: 50px;
+    grid-column-gap: 20px;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+h3 {
+color: var(--blue);
+}
+
+header img {
+    width: 300px;
+    margin-left: 8%;
+}
+
+h1 {
+    margin-left: 8%;
+    color: var(--grey);
+    font-size: 65px;
+}
+
+#student-picture img {
+    grid-area: picture;
+    border-radius: 360px;
+    justify-content: flex-end;
+}
+
+#student-quote {
+    grid-area: quote;
+    justify-content: start;
+    padding-top: 9%;
+    color: var(--grey);
+    line-height: 2.2em;
+    font-size: 120%;
+}
+
+#student-profile {
+    grid-area: profile;
+}
+
+#student-contact {
+    grid-area: caption;
+    font-style: italic;
+    text-align: center;
+}
+
+#experience {
+    grid-area: exp;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#experience > div {
+    width: 30%;
+}
+
+footer {
+    margin-left: 8%;
+}

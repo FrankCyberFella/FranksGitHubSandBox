@@ -1,0 +1,190 @@
+/* :root has variables that you can use in your code */
+
+/*Craig, thank you for your help on the flexbox. I just messed around
+with Monday's exercise to get more practice. I used the original code 
+I had written, but the flexbox code is below. -Sam */ 
+
+:root {
+    --top-row-height: 120px;
+    --gutter: 20px;
+    --blue: #00adee;
+    --light-blue: rgba(0, 173, 238, 0.4);
+    --green: #8cc36f;
+    --light-green: rgba(170, 239, 135, 0.8);  
+    --bg-color: rgba(192, 192, 192, 0.1);
+    --subheading: rgba(0, 0, 0, 0.6);
+  }
+
+
+* {
+   box-sizing: border-box; 
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+ 
+}
+
+
+
+body {
+  white-space: nowrap;
+  background-color: var(--bg-color);
+}
+
+
+aside {
+  position: fixed;
+  height: 100%;
+  width: 200px;
+  display: inline-block;
+  border-right: 1px solid;
+  border-right-color: var(--blue);
+  background-color: var(--bg-color);
+}
+
+aside ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  background-color: var(--bg-color);
+}
+aside li {
+  border-bottom: 1px solid var(--blue);
+  margin:auto;
+  font-weight: bold;
+  font-size: .9rem;
+  list-style-type: none;
+  padding-bottom: 12px;
+  margin-top: 12px;
+  width: 45%;
+}
+aside img {
+  align-content: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+aside a {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--blue);
+}
+
+main{
+  margin-left: 200px;
+  display:inline-block;
+  vertical-align: top;
+  padding-left: 20px;
+}
+
+header > img{
+  height: 150px;
+  align-content: left;
+  
+}
+
+.subheading {
+  color: var(--subheading);
+}
+main > img {
+ width : 90%;
+}
+
+section div {
+  white-space: normal;
+  display: inline-block;
+  width: 30%;
+  padding-right: 3px;
+  border-right: 1px solid var(--light-green);
+  margin-top: 10px;
+}
+
+section > div > h2 {
+  color: var(--green);
+}
+
+footer {
+  display:inline-block;
+  white-space: normal;
+  height: 150px;
+  vertical-align: bottom;
+}
+
+footer > div > div > img {
+  height : 25px;
+}
+
+/* img {
+  width: 100%;
+}
+
+body {
+      display: grid;
+      grid-template-columns: 1fr 2fr 2fr 2fr;
+      grid-template-areas: 
+          "aside header   header   header"
+          "aside pic      pic      pic   "
+          "aside sec      sec      sec "
+          "aside footer   .        . ";
+          background-color: var(--bg-color);
+          grid-row-gap: 20px;
+          grid-column-gap: 30px;
+          margin-left: 2%;
+          margin-right:2%;
+} 
+
+aside{ 
+  grid-area: aside;
+}
+
+aside img {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+  grid-area: header;
+}
+
+header img{
+  height: 120px;
+  width: 200px;
+  justify-content: center;
+  
+}
+
+main {
+  grid-area: pic;
+  width: 100%;
+  height: 300px;
+}
+
+section {
+   grid-area: sec;
+   display:flex;
+   flex-wrap: wrap;
+   
+}
+
+section div {
+  width: 33%;
+  padding: 0 1em;
+  justify-content: left;
+  
+}
+
+footer {
+  grid-area: footer;
+}
+
+footer > p {
+  margin-left: 0;
+  text-align: left;
+}
+
+#logos {
+  margin-left: 0;
+  width: 25px;
+} */

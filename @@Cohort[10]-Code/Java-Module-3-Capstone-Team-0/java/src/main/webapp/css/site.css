@@ -1,0 +1,219 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.error {
+	margin-left: 10px;
+	color: red;
+}
+
+.park-card{
+	display: flex;
+}
+
+.detail-weather{
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.favorite-park {
+	display:flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.survey-card {
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	min-height: 300px;
+}
+
+.weather-group {
+	flex-basis: 15%;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "image image"
+						"highword high"
+						"lowword low"
+						"advice advice";
+}
+.card-body2{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "image image description"
+						 "details quote fee";
+	grid-gap:1em;
+}
+
+.park-description{
+	grid-area:description;
+}
+.park-details{
+	grid-area:details;
+}
+.park-quote{
+	grid-area:quote;
+}
+.park-fee{
+	display: flex;
+	grid-area: fee;
+	justify-content: center;
+}
+
+#entryFee {
+	text-align: center;
+}
+
+.weather-group img{
+	grid-area:image;
+	width:100%;
+}
+.weather-group.highword{
+	grid-area:highword;
+}
+.weather-group.lowword{
+	grid-area:lowword;
+}
+.weather-group.high{
+	grid-area:high;
+}
+.weather-group.low{
+	grid-area:low;
+}
+.weather-group .weather-dress{
+	grid-area:advice;
+	visibility:visible;
+}
+.weather-group:first-of-type{
+	flex-basis:25%;
+}
+.weather-group:first-of-type .weather-dress{
+	visibility:visible;
+}
+
+.nav-item {
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 28px;
+	font-family: 'Varela Round', sans-serif;
+	border-left: 1px solid grey;
+}
+
+#park-nav-item {
+	padding-left: 20px;
+}
+
+nav {
+	
+	background-image: linear-gradient(#e8f9ea, #f9fffa);
+	border-top: 1px solid #bababa;
+	border-bottom: 1px solid #bababa;
+}
+
+.container {
+	margin-top: 100px;
+}
+
+.card {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#park-img-index {
+	box-shadow: 0px 2px 5px #b2b2b2;
+}
+
+#park-img-index:hover {
+	transform: scale(1.01);
+}
+
+#park-img {
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 6px;
+	border-color: #edeff2;
+	width:100%;
+	object-fit:cover;
+	grid-area:image;
+	box-shadow: 0px 2px 5px #b2b2b2;
+}
+
+#park-img-index {
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 6px;
+	border-color: #edeff2;
+	width:100%;
+	object-fit:cover;
+	grid-area:image;
+	box-shadow: 0px 2px 5px #b2b2b2;
+}
+
+#celsius{
+	width:75px;
+}
+#slider{
+	
+	margin: 0 0 20px 10px;
+}
+#toggle-wrapper{
+	display:flex;
+	flex-direction:row-reverse;
+	justify-content:space-between;
+}
+#forecast-title{
+	margin:20px;
+}
+
+.weather-group {
+	justify-items: center;
+	min-width: 158px;
+}
+
+.alert {
+	margin: 5px;
+}
+
+@media only screen and (max-width:1200px){
+	.card-body2{
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas: "image image image"
+							 "description description description"
+							 "details quote fee";
+		grid-gap:1em;
+	}
+	
+}
+
+@media only screen and (max-width:765px){
+	.card-body2{
+		display:grid;
+		grid-template-columns: 1fr;
+		grid-template-areas: "image"
+							 "description"
+							 "details"
+							  "quote"
+							  "fee";
+		grid-gap:1em;
+	}
+}
+

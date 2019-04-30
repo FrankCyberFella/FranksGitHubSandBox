@@ -1,0 +1,113 @@
+:root {
+    --top-row-height: 120px;
+    --gutter: 20px;
+    --blue: #00adee;
+    --light-blue: rgba(0, 173, 238, 0.4);
+    --green: #8cc36f;
+    --light-green: rgba(170, 239, 135, 0.8);  
+    --bg-color: rgba(191, 191, 191, 0.1);
+    --subheading: rgba(0, 0, 0, 0.6);
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+
+
+  }
+  body {
+    background-color: var(--bg-color);
+  }
+
+  body aside img {
+    width: 150px;
+    align-self: center;
+   
+
+  }
+  aside {
+    position: fixed;
+    height: 100%;
+    border-right: 1px solid var(--blue);
+    text-align: center;
+    width: 200px;
+    background: #f8f8f8;
+    left: 0px;
+    top: 0px;
+
+  }
+  main {
+    margin-left: 210px;
+  }
+  ul {
+    padding: 0px;
+  }
+
+  aside li {
+    padding: 10px;
+    border-bottom: 1px solid var(--blue);
+    font-weight: bold;
+    color: var(--light-blue);
+    text-decoration: none;
+    list-style: none;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    
+
+  }
+
+  body aside li a {
+    text-decoration: none;
+    color: var(--blue);
+    
+  }
+
+  main {
+    display: inline-block;
+    
+  } 
+
+  main header img {
+    height: 110px;
+  }
+  
+  main header p {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  section > div {
+    width: 32%;
+    border-right: 1px solid var(--green);
+    display: inline-block;
+    
+  }
+  section div h2 {
+    color: var(--green);
+  
+  }
+  main > img {
+    width: 100%;
+  }
+  #contact-us {
+    border-right: none;
+  }
+
+  #logos img {
+    width: 5%;
+    
+    
+  }
+
+  #logos {
+    text-align: center
+  }
+
+  footer div h3 {
+    display: none;
+  }
+
+  footer div p {
+    display: none;
+  }

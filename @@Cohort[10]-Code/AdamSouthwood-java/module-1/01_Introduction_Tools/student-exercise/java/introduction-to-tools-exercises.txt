@@ -1,0 +1,377 @@
+----
+1.  To begin, open your terminal, and enter the following command to change
+    directory to the exercise directory.
+----
+
+$ cd ~/workspace/exercises/m1-w1d1-intro-to-tools-exercises/java-helloworld
+
+Note, do not enter the beginning "$" character. It represents the prompt for
+the command line. This convention is commonly used to visually separate the
+actual command from other text in Unix documentation.
+
+
+----
+2.  What does the ~ (tilde) character in the above command to change directory
+    refer to?
+----
+
+the home directory
+----
+3.  A good habit to develop, especially while you're developing your skills on
+    the command line, is to confirm your location after changing directories.
+    This can be easily accomplished with the "pwd" command.
+----
+
+$ pwd
+/Users/adamsouthwood/workspace/AdamSouthwood-java/module-1/01_Introduction_Tools/student-exercise/java/java-helloworld
+
+The present working directory displayed should match the directory you changed
+to in Exercise 1.  Note, the two may not match at the very beginning if you
+used the tilde when changing directories.  The tilde is a convenience to save
+you some typing.  The system resolves the tilde to the full location as it
+changes directory, and the "pwd" command reflects this.
+
+
+----
+4.  Display a list of all the files and directories in your present working
+    directory. Include all dot-files and dot-directories.  Recall the "all" and
+    "long format" flags for the "ls" command.
+----
+
+$ ls -la
+total 24
+drwxr-xr-x  6 adamsouthwood  staff   204 Jan 14 14:26 .
+drwxr-xr-x  7 adamsouthwood  staff   238 Jan 14 14:26 ..
+-rw-r--r--@ 1 adamsouthwood  staff  6148 Jan 14 14:26 .DS_Store
+drwxr-xr-x  3 adamsouthwood  staff   102 Jan 14 14:23 database
+-rwxr-xr-x  1 adamsouthwood  staff  1091 Jan 14 14:23 pom.xml
+drwxr-xr-x  4 adamsouthwood  staff   136 Jan 14 14:23 src
+
+----
+5.  What do the "." and ".." directories displayed in the directory listing in
+    Exercise 4 represent?
+----
+
+.. indicates parent 
+. indicates current directory (where u are now)
+----
+6.  What are the names of the files, including any dot-files, displayed in the
+    directory listing in Exercise 4?
+----
+
+-rw-r--r--@ 1 adamsouthwood  staff  6148 Jan 14 14:26 .DS_Store
+-rwxr-xr-x  1 adamsouthwood  staff  1091 Jan 14 14:23 pom.xml
+
+----
+7.  What are the names of the directories, including any dot-directories, displayed in
+    the directory listing in Exercise 4?
+----
+
+drwxr-xr-x  6 adamsouthwood  staff   204 Jan 14 14:26 .
+drwxr-xr-x  7 adamsouthwood  staff   238 Jan 14 14:26 ..
+drwxr-xr-x  3 adamsouthwood  staff   102 Jan 14 14:23 database
+drwxr-xr-x  5 adamsouthwood  staff   170 Jan 14 15:43 src
+----
+8.  pom.xml is a Maven build file. You will learn more about Maven in later
+    lectures. As for the exercise, it is sometimes necessary, and usually
+    always interesting to be able to view the contents of files while at the
+    command line. A friendly and easy-to-use utility that allows you to do this
+    is "less".
+
+    "less" has two great features. First, it is a file viewer. You never have
+    to worry about accidentally modifying the file, as you would if you opened it
+    in an editor.  Second, it allows you to page-up, page-down, search, and
+    perform other nifty navigations which are really useful when files are big.
+
+    View pom.xml using "less".
+
+    Or, for those who are more adventurous, you might want to try using "less" with a huge
+    file like database/pagila.sql where the utility's navigation features really
+    shine.
+
+    Press Q to quit when you wish to stop viewing either of the files.
+----
+
+$ less pom.xml
+
+Or
+
+$ less database/pagila.sql
+
+You are encouraged to make "less" part of your standard command line toolkit.
+
+
+1       PENELOPE        GUINESS 2006-02-15 09:34:33
+2       NICK    WAHLBERG        2006-02-15 09:34:33
+3       ED      CHASE   2006-02-15 09:34:33
+4       JENNIFER        DAVIS   2006-02-15 09:34:33
+5       JOHNNY  LOLLOBRIGIDA    2006-02-15 09:34:33
+
+----
+9.  This is good time to create a Git snapshot of your progress.  Usually,
+    you'll want to check the Git status to review the list of files that
+    have been modified, added, or deleted. Then you'll want to add and commit
+    those changes to your local repository.
+
+    Don't forget to save your changes to this text file before creating the snapshot.
+----
+
+Did you remember to save "introduction-to-tools-exercise.txt"?
+
+$ git status
+16:12 $ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ../introduction-to-tools-exercises.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+✔ ~/workspace/AdamSouthwood-java/module-1/01_Introduction_Tools/student-exercise/java/java-helloworld [master|✚ 1] 
+
+$ git add -A
+16:13 $ git add -A
+✔ ~/workspace/AdamSouthwood-java/module-1/01_Introduction_Tools/student-exercise/java/java-helloworld [master|●1] 
+
+$ git commit -m "Good stopping point"
+ 16:13 $ git commit -m"saving one through eight"
+[master 66a0734] saving one through eight
+ 1 file changed, 23 insertions(+), 13 deletions(-)
+✔ ~/workspace/AdamSouthwood-java/module-1/01_Introduction_Tools/student-exercise/java/java-helloworld [master ↑·1|✔] 
+
+Note, you do not need to push this commit up to BitBucket at this time. The
+typical Git workflow is to make many small commits to your local repo while
+working. You push up to BitBucket when you're ready to share.
+
+You'll be asked to push to BitBucket twice in this exercise, once a bit further
+along, and then at the end.
+
+
+----
+10.  Change into src/main/java/com/techelevator directory under java-helloworld.
+    Show your present working directory after the change.
+----
+
+$ cd src/main/java/com/techelevator
+$ 16:21 $ pwd
+/Users/adamsouthwood/workspace/AdamSouthwood-java/module-1/01_Introduction_Tools/student-exercise/java/java-helloworld/src/main/java/com/techelevator
+✔ ~/workspace/AdamSouthwood-java/module-1/01_Introduction_Tools/student-exercise/java/java-helloworld/src/main/java/com/techelevator [master|✔] 
+
+
+----
+11. Does the change directory command in Exercise 10 use a relative, or absolute
+    path?
+----
+
+Absolute path
+
+
+----
+12. List all the files and directories, including any dot-files or dot-directories in
+    your present working directory.
+----
+
+$ 16:22 $ ls -la
+total 8
+drwxr-xr-x  3 adamsouthwood  staff  102 Jan 14 14:23 .
+drwxr-xr-x  3 adamsouthwood  staff  102 Jan 14 14:23 ..
+-rwxr-xr-x  1 adamsouthwood  staff  141 Jan 14 14:23 Helloworld.java
+✔ ~/workspace/AdamSouthwood-java/module-1/01_Introduction_Tools/student-exercise/java/java-helloworld/src/main/java/com/techelevator [master|✚ 1] 
+
+
+----
+13. "Helloworld.java" is the sole source code file of the Helloworld application.
+    Make a backup of the file named "Helloworld.java.backup" using the copy
+    command.
+----
+
+$ cp Helloworld.java Helloworld.java.backup
+
+The "cp" parameters are the name of the source file followed by the name of the
+destination file.
+
+$ 16:34 $ ls -la
+total 16
+drwxr-xr-x  4 adamsouthwood  staff  136 Jan 14 16:33 .
+drwxr-xr-x  3 adamsouthwood  staff  102 Jan 14 14:23 ..
+-rwxr-xr-x  1 adamsouthwood  staff  141 Jan 14 14:23 Helloworld.java
+-rwxr-xr-x  1 adamsouthwood  staff  141 Jan 14 16:33 Helloworld.java.backup
+✔ ~/workspace/AdamSouthwood-java/module-1/01_Introduction_Tools/student-exercise/java/java-helloworld/src/main/java/com/techelevator [master|✚ 1…1] 
+
+
+----
+14. Rename "Helloworld.java.backup" to "Helloworld.java.copy" using the move
+    command. (There is no rename command in UNIX.)
+----
+
+$ mv Helloworld.java.backup Helloworld.java.copy
+
+The "mv" parameters are the existing name of the file followed by the new name
+of the file.
+
+$ 
+16:36 $ ls -la
+total 16
+drwxr-xr-x  4 adamsouthwood  staff  136 Jan 14 16:36 .
+drwxr-xr-x  3 adamsouthwood  staff  102 Jan 14 14:23 ..
+-rwxr-xr-x  1 adamsouthwood  staff  141 Jan 14 14:23 Helloworld.java
+-rwxr-xr-x  1 adamsouthwood  staff  141 Jan 14 16:33 Helloworld.java.copy
+✔ ~/workspace/AdamSouthwood-java/module-1/01_Introduction_Tools/student-exercise/java/java-helloworld/src/main/java/com/techelevator [master|✚ 1…1] 
+
+----
+15. Let's call this a "feature complete" point in the exercises, and not only
+    check-in to the local repository, but also push our work to our remote repository in
+    BitBucket. Pushing our work to a remote repository is a great way to ensure that we
+    don't accidentally lose work stored locally, and also enables us to share work with
+    others on our teams.
+----
+
+$ <enter the Git command to display status>
+16:37 $ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ../../../../../../introduction-to-tools-exercises.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Helloworld.java.copy
+
+no changes added to commit (use "git add" and/or "git commit -a")
+✔ ~/workspace/AdamSouthwood-java/module-1/01_Introduction_Tools/student-exercise/java/java-helloworld/src/main/java/com/techelevator [master|✚ 1…1] 
+
+$ <enter the Git command to "stage" all changes>
+16:39 $ git add -A
+✔ ~/workspace/AdamSouthwood-java/module-1/01_Introduction_Tools/student-exercise/java/java-helloworld/src/main/java/com/techelevator [master|●2] 
+
+$ <enter the Git command to save all "staged" changes>
+16:42 $ git commit -m"saving 15 questions"
+[master 199e454] saving 15 questions
+ 2 files changed, 52 insertions(+), 13 deletions(-)
+ create mode 100755 module-1/01_Introduction_Tools/student-exercise/java/java-helloworld/src/main/java/com/techelevator/Helloworld.java.copy
+✔ ~/workspace/AdamSouthwood-java/module-1/01_Introduction_Tools/student-exercise/java/java-helloworld/src/main/java/com/techelevator [master ↑·1|✔] 
+
+$ git push origin master
+Counting objects: 13, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (13/13), 1.46 KiB | 746.00 KiB/s, done.
+Total 13 (delta 4), reused 0 (delta 0)
+To https://bitbucket.org/te-cle-cohort-10/AdamSouthwood-java
+   66a0734..199e454  master -> master
+✔ ~/workspace/AdamSouthwood-java/module-1/01_Introduction_Tools/student-exercise/java/java-helloworld/src/main/java/com/techelevator [master|✔] 
+16:46 $ 
+
+
+
+----
+16. Delete the backup file, "Helloworld.java.copy" using the remove command.
+----
+
+$ rm Helloworld.java.copy
+
+The "rm" parameter is the name of the file to be deleted.
+
+$ 08:38 $ ls -la
+total 8
+drwxr-xr-x  3 adamsouthwood  staff  102 Jan 15 08:38 .
+drwxr-xr-x  3 adamsouthwood  staff  102 Jan 14 14:23 ..
+-rwxr-xr-x  1 adamsouthwood  staff  141 Jan 14 14:23 Helloworld.java
+✔ ~/workspace/AdamSouthwood-java/module-1/01_Introduction_Tools/student-exercise/java/java-helloworld/src/main/java/com/techelevator [master|✚ 1] 
+08:38 $ 
+
+
+
+----
+17. Change directory to the java-helloworld directory using either one of the
+    commands shown below.
+----
+
+$ cd ../../../../../
+
+or
+
+$ cd ~/workspace/exercises/m1-w1d1-intro-to-tools-exercises/java-helloworld
+
+Note the first alternative relies upon the ".." parent directory notation.  In
+essence it says to change directory from the current directory's parent's parent's
+parent's parent's parent.  You'll know you're getting comfortable at the
+command line when that seems natural.
+
+Regardless of the option you chose, check your new location.
+
+$ 08:42 $ pwd
+/Users/adamsouthwood/workspace/AdamSouthwood-java/module-1/01_Introduction_Tools/student-exercise/java/java-helloworld
+✔ ~/workspace/AdamSouthwood-java/module-1/01_Introduction_Tools/student-exercise/java/java-helloworld [master|✚ 1] 
+
+
+----
+18. Create a documentation directory named "docs" under java-helloworld, and then
+    change into it.
+----
+
+$ mkdir docs
+$ 08:49 $ cd docs
+✔ ~/workspace/AdamSouthwood-java/module-1/01_Introduction_Tools/student-exercise/java/java-helloworld/docs [master|✚ 1] 
+08:57 $ pwd
+/Users/adamsouthwood/workspace/AdamSouthwood-java/module-1/01_Introduction_Tools/student-exercise/java/java-helloworld/docs
+✔ ~/workspace/AdamSouthwood-java/module-1/01_Introduction_Tools/student-exercise/java/java-helloworld/docs [master|✚ 1] 
+08:58 $ 
+
+
+----
+19. Create a new file name "readme.txt" using Visual Studio Code, and add the text
+    "Hello, this is the beginning of the application's documentation."
+----
+
+$ code readme.txt
+
+Don't forget to save the file in Visual Studio Code!
+
+
+----
+20. As a final exercise, please perform the following commands to save and push your
+    work so it can be reviewed by an instructor.
+----
+
+$ 10:27 $ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	01_Introduction_Tools/student-exercise/java/readme.txt
+	readme.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+✔ ~/workspace/AdamSouthwood-java/module-1 [master|…2] 
+
+$ 10:29 $ git add -A
+✔ ~/workspace/AdamSouthwood-java/module-1 [master|●2] 
+
+
+$ 10:30 $ git commit -m"finished hw1"
+[master 270d53c] finished hw1
+ 2 files changed, 2 insertions(+)
+ create mode 100644 module-1/01_Introduction_Tools/student-exercise/java/readme.txt
+ create mode 100644 module-1/readme.txt
+
+
+$ 10:30 $ git push origin master
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 625 bytes | 625.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+To https://bitbucket.org/te-cle-cohort-10/AdamSouthwood-java
+   88681cd..270d53c  master -> master
+

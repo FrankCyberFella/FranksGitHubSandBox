@@ -1,0 +1,20 @@
+@charset "UTF-8";
+form{
+	display:flex;
+	flex-wrap:wrap;
+	width:100%;
+	flex-direction:column;
+}
+input{
+	width:60%;
+}
+label{
+	width:100px;
+}
+#submit{
+	width:100px;
+}
+#review{
+	min-height:80px;
+	
+}

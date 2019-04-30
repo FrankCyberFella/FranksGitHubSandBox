@@ -1,0 +1,68 @@
+				
+				
+				Steps for Developing Vending Machine Software
+				
+
+
+A. Application Framework 
+ 
+1. Reveiw all Requirements 
+
+ Classify Objects (Classes) vs Non-Objects (Functions) 
+ 
+Objects (Classes) 
+Vending Machine
+Slots//Food and beverage dispenser
+Items
+Change Dispenser 
+Checkout Buttons
+
+	 	
+Non-Objects (Functions) will turn into method
+Payment Recieved
+Display(See Items)
+ItemRelease
+
+   
+   Menu
+   display vending machine Items
+   Purchase
+   End
+   
+    Methods 
+	
+	Interfaces 
+VendingMachineCLI is an interface (collection of methods) is provided. Do not add anything to this section. 
+public static main(String args[])
+
+2. Create Classes 
+
+Vending Machine (Parent) 
+
+Slots
+ - Public double SlotsForFood()
+ 
+Items
+ - Public ints ItemstoEat()
+
+
+Payment Options - Functions 
+Select Item Device W/ Item Count - Functions
+Change Dispense - Functions
+Checkout Button - Functions
+
+3. Declare any known methods for the interfaces and
+declare variables (Has-A: data types) classes(Is-A: Inheritnce) 
+
+B. Application Functionality (Start Working in Eclipse)
+1. Create Class Constructors
+2. Create Getters and Setters
+3. Import any methods from implemented Interfaces //Interface aldready provided and extending it 
+4. Add code to the methods to perform required
+tasks/actions/functions
+5. Create Unit Tests to verify methods
+function properly.
+
+C. Application User Experience
+1. Develop code for user interaction (front-end code
+or command line application

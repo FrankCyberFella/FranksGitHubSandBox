@@ -1,0 +1,11 @@
+/Users/grantbraid/workspace/GrantBraid-java/C_sharp/test/bin/Debug/netcoreapp2.2/test.deps.json
+/Users/grantbraid/workspace/GrantBraid-java/C_sharp/test/bin/Debug/netcoreapp2.2/test.runtimeconfig.json
+/Users/grantbraid/workspace/GrantBraid-java/C_sharp/test/bin/Debug/netcoreapp2.2/test.runtimeconfig.dev.json
+/Users/grantbraid/workspace/GrantBraid-java/C_sharp/test/bin/Debug/netcoreapp2.2/test.dll
+/Users/grantbraid/workspace/GrantBraid-java/C_sharp/test/bin/Debug/netcoreapp2.2/test.pdb
+/Users/grantbraid/workspace/GrantBraid-java/C_sharp/test/obj/Debug/netcoreapp2.2/test.csprojAssemblyReference.cache
+/Users/grantbraid/workspace/GrantBraid-java/C_sharp/test/obj/Debug/netcoreapp2.2/test.csproj.CoreCompileInputs.cache
+/Users/grantbraid/workspace/GrantBraid-java/C_sharp/test/obj/Debug/netcoreapp2.2/test.AssemblyInfoInputs.cache
+/Users/grantbraid/workspace/GrantBraid-java/C_sharp/test/obj/Debug/netcoreapp2.2/test.AssemblyInfo.cs
+/Users/grantbraid/workspace/GrantBraid-java/C_sharp/test/obj/Debug/netcoreapp2.2/test.dll
+/Users/grantbraid/workspace/GrantBraid-java/C_sharp/test/obj/Debug/netcoreapp2.2/test.pdb

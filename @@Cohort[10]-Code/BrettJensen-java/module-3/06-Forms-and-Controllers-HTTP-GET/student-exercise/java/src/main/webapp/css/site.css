@@ -1,0 +1,82 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#container {
+	min-width: 100vh;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+#form-container {
+	min-width: 100%;
+	min-height: 80vh;
+	margin: 15px auto;
+	padding: 20px;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+#optionBar {
+	display: flex;
+	justify-content: center;
+}
+
+#optionBar a {
+	text-decoration: none;
+	width: 150px;
+	height: 30px;
+	background-color: grey;
+	color: white;
+	font-weight: 800;
+	border-radius: 15px;
+	margin: 10px;
+	padding: 5px;
+	text-align: center;
+	
+}
+
+#optionBar a:hover {
+	background-color: black;
+}
+
+form {
+	margin-bottom: 20px;
+}
+
+.table {
+	text-align: center;
+	justify-content: left;
+}
+
+
+#filmSubmitButton, 
+#customerSubmitButton {
+	width: 100px;
+	height: 40px;
+}
+
+#customerSearch, 
+#filmSearch {
+	display: flex;
+	justify-content: center;
+}
+
+#customerSearch div, 
+#filmSearch div {
+	margin-right: 15px;
+}
+
+

@@ -1,0 +1,23 @@
+body{
+    background: black;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #all{
+    display: flex;
+    justify-content: center;
+  }
+  button{
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 1px;
+    margin-top: 50%;
+  }
+  
+  #keyboard{
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }

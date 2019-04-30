@@ -1,0 +1,55 @@
+
+Potato Crisps Chip        |   2
+Stackers Chip             |   0
+Grain Waves Chip          |   1
+Cloud Popcorn Chip        |   0
+Moonpie Candy             |   0
+Cowtales Candy            |   1
+Wonka Bar Candy           |   0
+Crunchie Candy            |   1
+Cola Drink                |   0
+Dr. Salt Drink            |   0
+Mountain Melter Drink     |   1
+Heavy Drink               |   0
+U-Chews Gum               |   0
+Little League Chew Gum    |   0
+Chiclets Gum              |   0
+Triplemint Gum            |   0
+
+**TOTAL SALES**  $13.60
+Potato Crisps Chip        |   0
+Stackers Chip             |   0
+Grain Waves Chip          |   0
+Cloud Popcorn Chip        |   0
+Moonpie Candy             |   0
+Cowtales Candy            |   0
+Wonka Bar Candy           |   0
+Crunchie Candy            |   0
+Cola Drink                |   0
+Dr. Salt Drink            |   0
+Mountain Melter Drink     |   0
+Heavy Drink               |   0
+U-Chews Gum               |   0
+Little League Chew Gum    |   0
+Chiclets Gum              |   0
+Triplemint Gum            |   0
+
+**TOTAL SALES**  $0.00
+Potato Crisps Chip        |   1
+Stackers Chip             |   0
+Grain Waves Chip          |   0
+Cloud Popcorn Chip        |   0
+Moonpie Candy             |   0
+Cowtales Candy            |   0
+Wonka Bar Candy           |   0
+Crunchie Candy            |   0
+Cola Drink                |   0
+Dr. Salt Drink            |   0
+Mountain Melter Drink     |   0
+Heavy Drink               |   0
+U-Chews Gum               |   0
+Little League Chew Gum    |   0
+Chiclets Gum              |   0
+Triplemint Gum            |   0
+
+**TOTAL SALES**  $3.05

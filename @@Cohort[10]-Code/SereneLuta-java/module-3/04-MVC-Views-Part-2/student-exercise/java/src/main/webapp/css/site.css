@@ -1,0 +1,235 @@
+body {
+	width: 100%;
+	background-color: #212121;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+		sans-serif;
+}
+
+body, header, nav {
+	margin: 0px;
+}
+
+header {
+	background-color: #0099CC;
+	color: white;
+	padding: 10px 10px;
+}
+
+nav {
+	background-color: #8DC63F;
+	margin-bottom: 20px;
+	padding: 5px;
+	height: 50px;
+}
+
+nav ul {
+	float: left;
+}
+
+nav li {
+	list-style-type: none;
+	color: white;
+	margin-left: 25px;
+	margin-bottom: 10px;
+	font-size: 1.3em;
+	float: left;
+}
+
+nav li a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	text-decoration: underline;
+}
+
+section {
+	clear: both;
+	display: block;
+	width: 80%;
+	margin: 20px auto;
+	vertical-align: top;
+	text-align: center;
+	min-height: 450px;
+	background-color: #FFF;
+	border-radius: 7px;
+}
+
+#table-content {
+	width: auto;
+    height:210px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+	
+}
+
+#list {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+#list-img {
+	width: 60%;
+	padding-right: 15px;
+	padding-left: 35px;
+	display: flex;
+	float: left;
+}
+
+#list-name {
+	text-align:left;
+	dispaly:flex;
+	float: left;
+
+	padding: 0px;
+	
+}
+
+#list-info {
+	text-align: left;
+	font-size: 20px;
+}
+#list-mnfr {
+	text-align:left;
+	display:flex;
+	float: left;
+	padding: 0px;
+}
+
+ #list-price {
+	text-align:left;
+	display:flex;
+	float: left;
+	color:red;
+	
+} 
+
+#list-weight {
+	text-align:left;
+	display:flex;
+	float: left;
+}
+
+#list-star {
+	display:flex;
+	width: 100px;
+	text-align:left;
+	float: left;
+}
+
+#table-img {
+	width: 100%;
+}
+
+#table-star {
+	width: 50%;
+}
+
+#table-titles {
+	display:flex;
+	width: 10%;
+	float: left;
+	margin-top: 75px;
+	font-size: 18px;
+	text-align: left;
+}
+
+#table-products {
+	display: flex;
+	float: left;
+	width: 90%;
+	font-size: 18px;
+}
+
+#table-products tr:nth-child(even) {
+	background-color: #f4f4f4;
+}
+
+#table-price {
+	color: #ff0000;
+	font-size: 20px;
+}
+
+#main-tiles-div {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+}
+
+#tileDiv {
+	width: 30%;
+	margin: 0px;
+	margin: 10px 10px 30px 10px;
+}
+
+#tilePhoto {
+	width: 100%;
+}
+
+#tile-name {
+	font-size: 24px;
+	font-weight: bolder;
+}
+
+#tile-mnfr {
+	font-size: 20px;
+}
+
+#tileStar {
+	width: 150px;
+}
+
+#tile-price {
+	color: #ff0000;
+	font-size: 20px;
+}
+
+#tile-weight {
+	font-size: 18px;
+}
+
+#detail-img {
+	padding-top: 25px;
+	width: 50%;
+	display: flex;
+	float: left;
+}
+
+#detail-star {
+	width: 15%;
+	align-content: left;
+	float: left;
+}
+
+#detail-name {
+	padding-top: 25px;
+	font-size: 24px;
+	text-align: left;
+	font-weight: bold;
+}
+
+#detail-mnfr {
+	font-size: 22px;
+	text-align: left;
+}
+
+#detail-price {
+	text-align: left;
+	font-size: 22px;
+	color: #ff0000;
+}
+
+#detail-weight {
+	text-align: left;
+	font-size: 22px;
+}
+
+#detail-desc {
+	text-align: left;
+	font-size: 22px;
+}

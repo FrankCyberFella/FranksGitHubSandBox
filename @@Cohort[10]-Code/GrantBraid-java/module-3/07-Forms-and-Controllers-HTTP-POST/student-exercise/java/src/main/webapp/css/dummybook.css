@@ -1,0 +1,79 @@
+﻿body {
+	background-color: #fff;
+	font-family: sans-serif;
+}
+
+header {
+	margin: 25px;
+}
+
+header h1 {
+	font-size: 21pt;
+	color: black;
+}
+
+header p {
+	color: #fff;
+	/*font-size: 12pt;*/
+}
+
+
+nav {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+nav h2 {
+	color: black;
+	padding-left: 60px;
+}
+
+nav p {
+	color: #FFFFFF;
+	/*font-size: 12pt;*/
+	font-style: italic;
+	padding-left: 60px;
+}
+
+
+
+nav ul {
+	width: 100%;
+}
+
+nav ul li {
+	float: left;
+	margin-right: 20px;
+	background-color: yellow;
+	border-radius: 8px;
+	list-style: none;
+	text-align: center;
+	width: 200px;
+	padding-top: 5px;
+	color: white;
+}
+
+nav:after {
+	clear: both;
+}
+
+#forum-display {
+	display: flex;
+	border-top: 3px solid gray;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+
+.pad-left {
+	margin-left: 10px;
+		border-collapse: separate;
+	border-spacing: 10px;
+}
+
+.date {
+	padding-top: 15px;
+}
+
+.go-away{
+	color: white;
+}

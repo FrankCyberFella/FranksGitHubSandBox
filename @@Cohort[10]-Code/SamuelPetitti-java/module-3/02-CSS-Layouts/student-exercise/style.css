@@ -1,0 +1,102 @@
+:root {
+    --blue: #00adee;
+    --grey: #505355;
+}
+  
+* {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 16px;
+}
+img {
+    width: 100%;
+}
+
+body{
+    background-color: rgba(192, 192, 192,0.1);
+    color: var(--grey)
+}
+
+#student-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "quote    quote     pic "
+        "profile  profile   contact"
+        "exp      exp        exp  ";
+        grid-row-gap: 20px;
+        grid-column-gap: 50px;
+        margin-right: 8%;
+        margin-left: 8%;
+}
+header {
+    margin-left: 8%;
+    margin-right: 8%;
+    width: 25%;
+} 
+
+h1 {
+    margin-left: 8%;
+    margin-right: 8%;
+    font-size: 3rem;
+} 
+
+#student-quote {
+    grid-area: quote;
+    justify-content: left;
+}
+
+#student-picture{
+    grid-area: pic;
+    justify-content: right;
+}
+
+#student-picture img {
+    border-radius: 50%;
+}
+
+#student-contact{
+    grid-area: contact;
+    text-align: center;
+}
+#student-profile{
+    grid-area: profile;
+}
+
+#experience{
+    grid-area: exp;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#experience div{
+    width: 33%;
+    padding: 0 1em;
+}
+
+#experience div h3 {
+    color: var(--blue);
+}
+
+footer {
+    grid-area: footer;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+#store a {
+    display: block;
+    text-align: center;
+    background-color: var(--black);
+    color: var(--grey);
+    width: 25%;
+    line-height: 50px;
+    margin: 0 auto;
+    border-radius: 5px;
+  
+  }

@@ -1,0 +1,127 @@
+html {
+    height : 100%;
+    /* default font size to be 16 pixels*/
+    font-size: 16px;
+
+}
+*{
+    /* the width of the box should include padding and a border*/
+    box-sizing: border-box;
+
+}
+body{
+    /* change the default page font */
+    font-family: 'Raleway', sans-serif;
+    /* Gradient Background, stretch */
+    background-image: linear-gradient(to bottom, #858c90,#BBB);
+    /* do not repeat the background - stretch it */
+    background-repeat: no-repeat;
+    /* do not scroll the background with the page */
+    background-attachment: fixed;
+}
+div.trello-list{
+    /* Create a multi-column layout */
+    display: inline-block;
+    width: 300px;
+    background-color:#DDD;
+    border-radius:2px 3px;
+
+
+}
+div.trello-list h2{
+    font-size: 1.0rem;
+    margin: 8px;
+    font-weight:bold;
+}
+div.trello-list ol{
+    padding:0;
+    margin:0;
+}
+div.trello-list li{
+    /*remove the numbering from the ordered list*/
+    list-style:none;
+    background-color: rgb(255, 255, 255);
+    font-size: .9rem;
+    border-radius:1px;
+    margin-bottom: 8px;
+    padding:8px;
+}
+div.trello-list li:hover{
+    /*make the item darker when mouseover*/
+    background-color: #f5f6f7;
+    color: #092d42;
+}
+div.trello-list li:last-child{
+    /*the last item needs to reset its margin*/
+    margin-bottom:0px;
+}
+div.trello-list a{
+    display:block;
+    text-decoration: none;
+    padding:8px 0px 8px 5px; /*top, right, bottom, left*/
+    color:#888;
+    font-size: .85rem;
+}
+div.trello-list a:hover{
+    background-color: rgba(9,45,66,.1);
+}
+
+div.trello-list{
+    margin-right: 10px;
+    /*align the tops of each card*/
+    vertical-align:top;
+
+}
+body{
+    /*ensure elements don't wrap and force horizontal scrolling*/
+    white-space: nowrap;
+    
+}
+div.trello-list li{
+    white-space: normal;
+}
+/* apply styling to header and its descendants */
+header > h1, header > p{
+    display: inline-block;
+
+}
+header > h1{
+    /*convert to uppercase*/
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+header > p {
+    font-size: 0.9rem;
+    padding-left: 5px;
+}
+.labels span{
+    display: inline-block;
+    vertical-align:top;
+    width:35px;
+    height:8px;
+    border-radius:3px;
+}
+.label.pathway{
+    background-color:red;
+}
+.label.individual{
+    background-color:green;
+}
+.label.pair{
+    background-color:teal;
+}
+.label.general{
+    background-color:orange;
+}
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-track{
+    background: #bbb;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #888;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background:#888;
+}
