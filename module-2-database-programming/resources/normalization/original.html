@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+    border-collapse: collapse;
+    font: 15px arial, sans-serif;
+}
+table, th, td {
+    border: 1px solid black;
+    padding-left: 10px;
+}
+th, td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+th {
+  color: white;
+  background-color: #349EEB;
+  text-align: left;
+}
+.full_table {
+  width: 100%;
+}
+.three_quarter_table {
+  width: 75%;
+}
+.half_table {
+  width: 50%;
+}
+.third_table {
+  width: 33%;
+}
+.norm_change {
+  background-color:rgba(118, 177, 58, .33);
+}
+</style>
+</head>
+<body>
+
+<h2>Original Table</h2>
+
+<table class="full_table">
+  <tr>
+    <th>Cust Name</th>
+    <th>Item</th>
+    <th>Shipping Address</th>
+    <th>Journal</th>
+    <th>Supplier</th>
+    <th>Supplier Phone</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>Mike Smith</td>
+    <td>Thingamabob</td>
+    <td>28 Club Boulevard</td>
+    <td>Thingamabob Science Weekly</td>
+    <td>Acme</td>
+    <td>1-800-BUY-ACME</td>
+    <td>250</td>
+  </tr>
+  <tr>
+    <td>Hampton Avenue</td>
+    <td>Whatchamacallit</td>
+    <td>6420 W Main Street</td>
+    <td>Whatchamahickey Quarterly</td>
+    <td>Pinnacle</td>
+    <td>1-800-BUY-PINN</td>
+    <td>300</td>
+  </tr>
+  <tr>
+    <td>Lisa Byway</td>
+    <td>Thingamabob, Doohickey</td>
+    <td>808 E First Avenue</td>
+    <td>Thingamabob Science Weekly, Whatchamahickey Quarterly</td>
+    <td>Warehouse</td>
+    <td>216-555-1212</td>
+    <td>450</td>
+  </tr>
+  <tr>
+    <td>Roy Brubeck</td>
+    <td>Whatchamacallit</td>
+    <td>2304 NW Chambers Street</td>
+    <td>Whatchamacallit Quarterly</td>
+    <td>Pinnacle</td>
+    <td>1-800-BUY-ACME</td>
+    <td>300</td>
+  </tr>
+</table>
+
+<h2>First Normal Form Table</h2>
+<ul>
+  <li>Each cell to be single-valued</li>
+  <li>Entries in columns to be same type</li>
+  <li>Rows uniquely identified (add unique ID, or composite columns to create unique ID)
+</ul>
+<table class="full_table">
+  <tr>
+    <th>Cust ID</th>
+    <th>Cust Name</th>
+    <th>Item</th>
+    <th>Shipping Address</th>
+    <th>Journal</th>
+    <th>Supplier</th>
+    <th>Supplier Phone</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td class="norm_change">msmith</td>
+    <td>Mike Smith</td>
+    <td>Thingamabob</td>
+    <td>28 Club Boulevard</td>
+    <td>Thingamabob Science Weekly</td>
+    <td>Acme</td>
+    <td>1-800-BUY-ACME</td>
+    <td>250</td>
+  </tr>
+  <tr>
+    <td class="norm_change">havenue</td>
+    <td>Hampton Avenue</td>
+    <td>Whatchamacallit</td>
+    <td>6420 W Main Street</td>
+    <td>Whatchamahickey Quarterly</td>
+    <td>Pinnacle</td>
+    <td>1-800-BUY-PINN</td>
+    <td>300</td>
+  </tr>
+  <tr>
+    <td class="norm_change">lbyway</td>
+    <td>Lisa Byway</td>
+    <td>Thingamabob, Doohickey</td>
+    <td>808 E First Avenue</td>
+    <td>Thingamabob Science Weekly, Whatchamahickey Quarterly</td>
+    <td>Warehouse</td>
+    <td>216-555-1212</td>
+    <td>250</td>
+  </tr>
+  <tr>
+    <td class="norm_change">rbrubeck</td>
+    <td>Roy Brubeck</td>
+    <td>Whatchamacallit</td>
+    <td>2304 NW Chambers</td>
+    <td>Whatchamacallit Quarterly</td>
+    <td>Pinnacle</td>
+    <td>1-800-BUY-ACME</td>
+    <td>300</td>
+  </tr>
+</table>
+
+<h2>Second Normal Form Tables</h2>
+<ul>
+  <li>All attributes (non-dependent columns) dependent on key</li>
+</ul>
+<table class="three_quarter_table">
+  <tr>
+    <th>Cust ID</th>
+    <th>Cust Name</th>
+    <th>Shipping Address</th>
+  </tr>
+  <tr>
+    <td>msmith</td>
+    <td>Mike Smith</td>
+    <td>28 Club Boulevard</td>
+  </tr>
+  <tr>
+    <td>havenue</td>
+    <td>Hampton Avenue</td>
+    <td>6420 W Main Street</td>
+  </tr>
+  <tr>
+    <td>lbyway</td>
+    <td>Lisa Byway</td>
+    <td>808 E First Avenue</td>
+  </tr>
+  <tr>
+    <td>rbrubeck</td>
+    <td>Roy Brubeck</td>
+    <td>2304 NW Chambers</td>
+  </tr>
+</table>
+<p>
+<table class="third_table">
+  <tr>
+    <th>Cust ID</th>
+    <th>Item</th>
+  </tr>
+  <tr class="norm_change">
+    <td>msmith</td>
+    <td>Thingamabob</td>
+  </tr>
+  <tr class="norm_change">
+    <td>havenue</td>
+    <td>Whatchamacallit</td>
+  </tr>
+  <tr class="norm_change">
+    <td>lbyway</td>
+    <td>Thingamabob</td>
+  </tr>
+  <tr class="norm_change">
+    <td>lbyway</td>
+    <td>Doohickey</td>
+  </tr>
+  <tr class="norm_change">
+    <td>rbrubeck</td>
+    <td>Whatchamacallit</td>
+  </tr>
+</table>
+<p>
+<table class=three_quarter_table>
+  <tr>
+    <th>Item</th>
+    <th>Supplier</th>
+    <th>Supplier Phone</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>Thingamabob</td>
+    <td>Acme</td>
+    <td>1-800-BUY-ACME</td>
+    <td>250</td>
+  </tr>
+  <tr>
+    <td>Whatchamacallit</td>
+    <td>Pinnacle</td>
+    <td>1-800-BUY-PINN</td>
+    <td>300</td>
+  </tr>
+  <tr>
+    <td>Thingamabob</td>
+    <td>Acme</td>
+    <td>1-800-BUY-ACME</td>
+    <td>250</td>
+  </tr>
+  <tr>
+    <td>Doohickey</td>
+    <td>Pinnacle</td>
+    <td>1-800-BUY-PINN</td>
+    <td>200</td>
+  </tr>
+  <tr>
+    <td>Whatchamacallit</td>
+    <td>Pinnacle</td>
+    <td>1-800-BUY-ACME</td>
+    <td>300</td>
+  </tr>
+</table>
+<p>
+<table class="third_table">
+  <tr>
+    <th>Cust ID</th>
+    <th>Journal</th>
+  </tr>
+  <tr class="norm_change">
+    <td>msmith</td>
+    <td>Thingamabob Science Weekly</td>
+  </tr>
+  <tr class="norm_change">
+    <td>havenue</td>
+    <td>Whatchamahickey Quarterly</td>
+  </tr>
+  <tr class="norm_change">
+    <td>lbyway</td>
+    <td>Thingamabob Science Weekly</td>
+  </tr>
+  <tr class="norm_change">
+    <td>lbyway</td>
+    <td>Whatchamahickey Quarterly</td>
+  </tr>
+  <tr class="norm_change">
+    <td>rbrubeck</td>
+    <td>Whatchamacallit Quarterly</td>
+  </tr>
+</table>
+
+<h2>Third Normal Form Tables</h2>
+<ul>
+  <li>All columns can be determined only by the key in the table and no other column</li>
+</ul>
+<table class="half_table">
+  <tr>
+    <th>Item</th>
+    <th>Supplier</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>Thingamabob</td>
+    <td>Acme</td>
+    <td>250</td>
+  </tr>
+  <tr>
+    <td>Whatchamacallit</td>
+    <td>Pinnacle</td>
+    <td>300</td>
+  </tr>
+  <tr>
+    <td>Doohickey</td>
+    <td>Pinnacle</td>
+    <td>200</td>
+  </tr>
+</table>
+<p>
+<table class="third_table">
+  <tr>
+    <th>Supplier</th>
+    <th>Supplier Phone</th>
+  </tr>
+  <tr>
+    <td class="norm_change">Acme</td>
+    <td class="norm_change">1-800-BUY-ACME</td>
+  </tr>
+  <tr>
+    <td class="norm_change">Pinnacle</td>
+    <td class="norm_change">1-800-BUY-PINN</td>
+  </tr>
+</table>
+
+<h2>Fourth Normal Form Tables</h2>
+<ul>
+  <li>No multi-valued dependencies</li>
+</ul>
+<table class="half_table">
+  <tr>
+    <th>Cust ID</th>
+    <th>Cust Name</th>
+    <th>Shipping Address</th>
+  </tr>
+  <tr>
+    <td>msmith</td>
+    <td>Mike Smith</td>
+    <td>28 Club Boulevard</td>
+  </tr>
+  <tr>
+    <td>havenue</td>
+    <td>Hampton Avenue</td>
+    <td>6420 W Main Street</td>
+  </tr>
+  <tr>
+    <td>lbyway</td>
+    <td>Lisa Byway</td>
+    <td>808 E First Avenue</td>
+  </tr>
+  <tr>
+    <td>mickey.smith</td>
+    <td>Mike Smith</td>
+    <td>6420 W Main Street</td>
+  </tr>
+</table>
+<p>
+<table class="third_table">
+  <tr>
+    <th>Cust ID</th>
+    <th>Journal</th>
+  </tr>
+  <tr class="norm_change">
+    <td>msmith</td>
+    <td>Thingamabob Science Weekly</td>
+  </tr>
+  <tr class="norm_change">
+    <td>havenue</td>
+    <td>Whatchamahickey Quarterly</td>
+  </tr>
+  <tr class="norm_change">
+    <td>lbyway</td>
+    <td>Thingamabob Science Weekly</td>
+  </tr>
+  <tr class="norm_change">
+    <td>lbyway</td>
+    <td>Whatchamahickey Quarterly</td>
+  </tr>
+  <tr class="norm_change">
+    <td>mickey.smith</td>
+    <td>Whatchamacallit Quarterly</td>
+  </tr>
+</table>
+<p>
+
+</body>
+</html>

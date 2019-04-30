@@ -1,0 +1,27 @@
+body {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+header {
+  padding: 15px;
+  color: white;
+  background-color: #20262C;
+}
+legend {
+  padding-top: 15px;
+}
+label {
+    margin-bottom: 15px;
+    vertical-align: top;
+    display: inline-block;
+    width: 200px;
+}
+.question {
+  margin-top: 15px;
+}
+.radio-inline {
+  width: 50px;
+}
+.checkbox-inline {
+  width: 100px;
+}

@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "AdminPotholeEdit";
+}
+
+<div @*id="admin"*@ style="text-align:center">
+
+    <potholemap></potholemap>
+
+    <div style="text-align:center">
+        <editPothole></editPothole>
+        <section class="searchGraph">
+            <bargraph id="bargraph"></bargraph>
+            <searchbar id="search"></searchbar>
+        </section>
+
+        <resultstable></resultstable>
+
+    </div>
+    </div>
+    
+    @*<potholedate></potholedate>*@
+
+</div>
+
+
+
+<script src="~/RiotComponents/potholemap.tag" type="riot/tag">
+</script>
+<script src="~/RiotComponents/searchbar.tag" type="riot/tag">
+</script>
+<script src="~/RiotComponents/resultstable.tag" type="riot/tag">
+</script>
+<script src="~/RiotComponents/bargraph.tag" type="riot/tag">
+</script>
+<script src="~/RiotComponents/editPothole.tag" type="riot/tag">
+</script>
+@*<script src="~/RiotComponents/potholedate.tag" type="riot/tag">
+    </script>*@
+
+
+<script>
+
+    let bus = {
+        roles: 'bob'
+    };
+
+    riot.observable(bus);   //makes it so our bus can send and receive messages
+
+    // Mount the riot tags to the page here
+
+    riot.mount('potholemap', { bus: bus });
+    riot.mount('editPothole', { bus: bus });
+    riot.mount('searchbar', { bus: bus });
+    riot.mount('resultstable', { bus: bus });
+    riot.mount('bargraph', { bus: bus });
+    //riot.mount('potholedate', { bus: bus });
+
+
+</script>

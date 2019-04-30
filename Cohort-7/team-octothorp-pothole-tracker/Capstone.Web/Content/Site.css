@@ -1,0 +1,339 @@
+﻿body {
+    padding-top: 10px;
+    background: repeating-linear-gradient( -55deg, #191923, #191923, 1px, #222 1px, #222 3px );
+    background-attachment: fixed;
+    font-family: 'Roboto';
+    color: #FBFEF9;
+    overflow-x: hidden;
+    /*overflow-y: hidden;*/
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/*Desktops and Larger*/
+@media (min-width: 1610px) {
+    header h1 {
+        text-align: left;
+        box-shadow: dimgrey 0 0 2px 3px;
+        grid-area: header;
+        color: #FBFEF9;
+        background-color: black;
+        border-radius: 10px;
+        padding-left: 10px;
+    }
+
+    nav {
+        background-color: #A23B72;
+        font-size: 30px;
+        list-style-type: none;
+        border-radius: 10px;
+        box-shadow: black 2px 2px 2px 2px;
+        text-shadow: black 1px 1px;
+    }
+
+    a {
+        color: #FBFEF9;
+        text-align: left;
+        text-decoration: none;
+    }
+
+    li {
+        display: inline;
+        padding: 10px;
+    }
+
+        li:hover {
+            background-color: #59213F;
+            border-radius: 10px;
+        }
+
+    #loginSection {
+        border-radius: 4px;
+        margin: auto;
+        width: 60%;
+        height: 345px;
+        background-color: #191923;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        box-shadow: black 4px 4px 4px;
+    }
+
+        #loginSection h1 {
+            background-color: #0090C1;
+            text-align: center;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            text-shadow: black 1px 1px;
+            width: 100%;
+            margin: 0px;
+        }
+
+    #loginForm {
+        vertical-align: top;
+        margin-top: 30px;
+    }
+
+    #passwordRequirements {
+        margin: 0;
+    }
+}
+
+/*med screens*/
+@media(min-width: 800px) and (max-width: 1609px) {
+    header h1 {
+        text-align: left;
+        box-shadow: dimgrey 0 0 2px 3px;
+        grid-area: header;
+        color: #FBFEF9;
+        background-color: black;
+        border-radius: 10px;
+        padding-left: 10px;
+    }
+
+    nav {
+        background-color: #A23B72;
+        font-size: 20px;
+        list-style-type: none;
+        border-radius: 10px;
+        box-shadow: black 2px 2px 2px 2px;
+        text-shadow: black 1px 1px;
+    }
+
+    ul{
+        flex-grow:1;
+    }
+
+    a {
+        text-decoration: none;
+        color: #FBFEF9;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    li {
+        display: inline;
+        padding: 10px;
+    }
+
+        li:hover {
+            background-color: #59213F;
+            border-radius: 10px;
+        }
+
+    #loginForm {
+        text-align: center;
+    }
+
+    #loginSection h1 {
+        background-color: #191923;
+    }
+}
+
+/*small screens*/
+@media(max-width: 799px) {
+    header h1 {
+        text-align: center;
+        width: 100%;
+        grid-area: header;
+        color: #FBFEF9;
+        background-color: black;
+        border-radius: 10px;
+    }
+
+    ul{
+        padding-left:0;
+    }
+
+    nav ul li {
+        background-color: #A23B72;
+        flex-grow: 1;
+        margin-bottom: 3px;
+        list-style-type: none;
+        width: 100%;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: #FBFEF9;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    #loginSection img {
+        display: none;
+    }
+
+    #loginSection h1 {
+        background-color: #191923;
+    }
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+header {
+}
+
+#map {
+    display: inline-block;
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+    border: 5px solid #A23B72;
+    border-radius: 5px;
+    box-shadow: black 4px 4px;
+    margin: auto;
+}
+.searchGraph{
+    display:inline-flex;
+    margin-bottom:7px;
+    vertical-align:top;
+}
+  #bargraph{
+    height: 400px;
+    background-color: black;
+    border: 5px solid #A23B72;
+    border-radius: 5px;
+    box-shadow: black 4px 4px;
+    position: relative;
+    display:inline-block;
+}
+
+#search {
+    display: inline-grid;
+    border: #A23B72 solid 5px;
+    border-radius: 5px;
+    box-shadow: black 4px 4px;
+    margin-left: 10px;
+    background-color: #0090C1;
+    width: 50%;
+    text-align: center;
+}
+
+table {
+    display: inline-block;
+    border: 5px solid #A23B72;
+    border-radius: 5px;
+    box-shadow: black 4px 4px 4px;
+    font-size: 25px;
+    border-collapse: collapse;
+    max-width: 60%;
+    max-height: 400px;
+}
+
+.table-scroll {
+    display: inline-block;
+    border: 5px solid #A23B72;
+    border-radius: 5px;
+    box-shadow: black 4px 4px 4px;
+    font-size: 25px;
+    border-collapse: collapse;
+    max-width: 60%;
+    max-height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+    .table-index-page th {
+    background-color: #0090C1; /*teal*/
+    color: #FBFEF9;
+    text-shadow: black 1px 1px;
+    font-size: 30px;
+}
+
+.table-index-page tr {
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+.table-index-page td {
+    text-align: center;
+    color: black;
+    border: solid 1px black;
+}
+
+tr:nth-child(even) {
+    background-color: #FBFEF9; /*white*/
+}
+
+tr:nth-child(odd) {
+    background-color: lightgray; /*darker*/
+}
+
+label{
+    padding:5px;
+    text-align:center;
+}
+
+
+/*Scrollbar*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/*Track*/
+::-webkit-scrollbar-track {
+    background: #2d2d2d
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #777777;
+    border-left: 1px
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    /*Role Manager styling*/
+
+    .roleButtons{
+        display:inline-grid;
+    }
+
+    .roleButtons fieldset{
+        background-color:black;
+        margin:5px;
+    }
+
+    .roleButtons label{
+        text-shadow:black 1px 1px;
+    }
+
+    .roleButtons #icon{
+        border: 2px solid white;
+        box-shadow: dimgray 1px 1px;
+        border-radius: 3px;
+        text-align:center;
+        text-shadow:black 1px 1px;
+        padding:4px;
+    }
+
+    .roleButtons role{
+        border:3px solid white;
+        padding-right:20px;
+    }
+
+    .roleButtons span{
+        text-align:left;
+    }
