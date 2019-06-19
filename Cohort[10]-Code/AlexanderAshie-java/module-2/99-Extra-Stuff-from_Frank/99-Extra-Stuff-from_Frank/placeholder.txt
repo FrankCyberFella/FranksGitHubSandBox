@@ -1,4 +1,0 @@
-This file is holding the place for the examples of various features
-we will be discussing.
-
-Stay tuned!
