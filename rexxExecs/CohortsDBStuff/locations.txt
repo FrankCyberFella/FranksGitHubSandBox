@@ -1,0 +1,9 @@
+PHX      Phoenix     AZ 2017-08-31
+CLE      Cleveland   OH 2015-12-01
+VEGAS    Las Vagas   NV 2016-10-16
+COWTOWN  Ft. Worth   TX 2019-01-12
+LAX      Los Angeles CA (null)
+APPLE    New York    NY (null)
+JAZZ     New Orleans LA 2016-03-19
+OZ       Tornado     KS 2019-02-27
+MICKEY   ORLANDO     FL 2018-01-13
