@@ -2,8 +2,8 @@
 Say 'Enter Cohort Number'
 pull cohortNumber ,
 
-path='~/Cohort-Stuff/Cohort-'cohortNumber'/studentRepos'
-repoFile = 'studentRepos'||cohortNumber'.txt'
+path='/Users/frankfella/Cohort-Stuff/Cohort-'cohortNumber'/studentRepos/'
+repoFile = path||'studentRepos'||cohortNumber'.txt'
 say 'Using repo file:' repoFile
 do while lines(repoFile) > 0
 trace off
@@ -12,3 +12,4 @@ trace off
     say 'Pulling from 'repoName '-------------------------------------------'
     'cd  'path'/'repoName '&& git pull origin master'  
 end  
+
