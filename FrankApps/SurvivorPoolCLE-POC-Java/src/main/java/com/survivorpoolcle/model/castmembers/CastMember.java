@@ -1,137 +1,122 @@
 package com.survivorpoolcle.model.castmembers;
 
 public class CastMember {
-private int seasonid;
-private int survivorid;
-private int dayvotedout;
-private String originaltribe;
-private String currenttribe;
-private String secondtribe;
-private String thirdtribe;
-private String fourthtribe;
-
+private int seasonId;
+private int survivorId;
+private int dayVotedOut;
+private int originalTribe;
+private int currentTribe;
+private int secondTribe;
+private int thirdTribe;
+private int fourthTribe;
 /**
-
+ * @return the seasonId
  */
-public CastMember() {
-
+public int getSeasonId() {
+	return seasonId;
 }
 /**
- * @param seasonid
- * @param survivorid
+ * @param seasonId the seasonId to set
  */
-public CastMember(int seasonid, int survivorid) {
-	this.seasonid = seasonid;
-	this.survivorid = survivorid;
+public void setSeasonId(int seasonId) {
+	this.seasonId = seasonId;
 }
 /**
- * @return the seasonid
+ * @return the survivorId
  */
-public int getSeasonid() {
-	return seasonid;
+public int getSurvivorId() {
+	return survivorId;
 }
 /**
- * @param seasonid the seasonid to set
+ * @param survivorId the survivorId to set
  */
-public void setSeasonid(int seasonid) {
-	this.seasonid = seasonid;
+public void setSurvivorId(int survivorId) {
+	this.survivorId = survivorId;
 }
 /**
- * @return the survivorid
+ * @return the dayVotedOut
  */
-public int getSurvivorid() {
-	return survivorid;
+public int getDayVotedOut() {
+	return dayVotedOut;
 }
 /**
- * @param survivorid the survivorid to set
+ * @param dayVotedOut the dayVotedOut to set
  */
-public void setSurvivorid(int survivorid) {
-	this.survivorid = survivorid;
+public void setDayVotedOut(int dayVotedOut) {
+	this.dayVotedOut = dayVotedOut;
 }
 /**
- * @return the dayvotedout
+ * @return the originalTribe
  */
-public int getDayvotedout() {
-	return dayvotedout;
+public int getOriginalTribe() {
+	return originalTribe;
 }
 /**
- * @param dayvotedout the dayvotedout to set
+ * @param originalTribe the originalTribe to set
  */
-public void setDayvotedout(int dayvotedout) {
-	this.dayvotedout = dayvotedout;
+public void setOriginalTribe(int originalTribe) {
+	this.originalTribe = originalTribe;
 }
 /**
- * @return the originaltribe
+ * @return the currentTribe
  */
-public String getOriginaltribe() {
-	return originaltribe;
+public int getCurrentTribe() {
+	return currentTribe;
 }
 /**
- * @param originaltribe the originaltribe to set
+ * @param currentTribe the currentTribe to set
  */
-public void setOriginaltribe(String originaltribe) {
-	this.originaltribe = originaltribe;
+public void setCurrentTribe(int currentTribe) {
+	this.currentTribe = currentTribe;
 }
 /**
- * @return the currenttribe
+ * @return the secondTribe
  */
-public String getCurrenttribe() {
-	return currenttribe;
+public int getSecondTribe() {
+	return secondTribe;
 }
 /**
- * @param currenttribe the currenttribe to set
+ * @param secondTribe the secondTribe to set
  */
-public void setCurrenttribe(String currenttribe) {
-	this.currenttribe = currenttribe;
+public void setSecondTribe(int secondTribe) {
+	this.secondTribe = secondTribe;
 }
 /**
- * @return the secondtribe
+ * @return the thirdTribe
  */
-public String getSecondtribe() {
-	return secondtribe;
+public int getThirdTribe() {
+	return thirdTribe;
 }
 /**
- * @param secondtribe the secondtribe to set
+ * @param thirdTribe the thirdTribe to set
  */
-public void setSecondtribe(String secondtribe) {
-	this.secondtribe = secondtribe;
+public void setThirdTribe(int thirdTribe) {
+	this.thirdTribe = thirdTribe;
 }
 /**
- * @return the thirdtribe
+ * @return the fourthTribe
  */
-public String getThirdtribe() {
-	return thirdtribe;
+public int getFourthTribe() {
+	return fourthTribe;
 }
 /**
- * @param thirdtribe the thirdtribe to set
+ * @param fourthTribe the fourthTribe to set
  */
-public void setThirdtribe(String thirdtribe) {
-	this.thirdtribe = thirdtribe;
-}
-/**
- * @return the fourthtribe
- */
-public String getFourthtribe() {
-	return fourthtribe;
-}
-/**
- * @param fourthtribe the fourthtribe to set
- */
-public void setFourthtribe(String fourthtribe) {
-	this.fourthtribe = fourthtribe;
+public void setFourthTribe(int fourthTribe) {
+	this.fourthTribe = fourthTribe;
 }
 /* (non-Javadoc)
  * @see java.lang.Object#toString()
  */
 @Override
 public String toString() {
-	return "CastMembers [seasonid=" + seasonid + ", survivorid=" + survivorid + ", dayvotedout=" + dayvotedout
-			+ ", originaltribe=" + originaltribe + ", currenttribe=" + currenttribe + ", secondtribe=" + secondtribe
-			+ ", thirdtribe=" + thirdtribe + ", fourthtribe=" + fourthtribe + ", getSeasonid()=" + getSeasonid()
-			+ ", getSurvivorid()=" + getSurvivorid() + ", getDayvotedout()=" + getDayvotedout()
-			+ ", getOriginaltribe()=" + getOriginaltribe() + ", getCurrenttribe()=" + getCurrenttribe()
-			+ ", getSecondtribe()=" + getSecondtribe() + ", getThirdtribe()=" + getThirdtribe() + ", getFourthtribe()="
-			+ getFourthtribe() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
+	return "CastMember [seasonId=" + seasonId + ", survivorId=" + survivorId + ", dayVotedOut=" + dayVotedOut
+			+ ", originalTribe=" + originalTribe + ", currentTribe=" + currentTribe + ", secondTribe=" + secondTribe
+			+ ", thirdTribe=" + thirdTribe + ", fourthTribe=" + fourthTribe + ", getSeasonId()=" + getSeasonId()
+			+ ", getSurvivorId()=" + getSurvivorId() + ", getDayVotedOut()=" + getDayVotedOut()
+			+ ", getOriginalTribe()=" + getOriginalTribe() + ", getCurrentTribe()=" + getCurrentTribe()
+			+ ", getSecondTribe()=" + getSecondTribe() + ", getThirdTribe()=" + getThirdTribe() + ", getFourthTribe()="
+			+ getFourthTribe() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
 			+ super.toString() + "]";
 }
 /* (non-Javadoc)
@@ -141,14 +126,14 @@ public String toString() {
 public int hashCode() {
 	final int prime = 31;
 	int result = 1;
-	result = prime * result + ((currenttribe == null) ? 0 : currenttribe.hashCode());
-	result = prime * result + dayvotedout;
-	result = prime * result + ((fourthtribe == null) ? 0 : fourthtribe.hashCode());
-	result = prime * result + ((originaltribe == null) ? 0 : originaltribe.hashCode());
-	result = prime * result + seasonid;
-	result = prime * result + ((secondtribe == null) ? 0 : secondtribe.hashCode());
-	result = prime * result + survivorid;
-	result = prime * result + ((thirdtribe == null) ? 0 : thirdtribe.hashCode());
+	result = prime * result + currentTribe;
+	result = prime * result + dayVotedOut;
+	result = prime * result + fourthTribe;
+	result = prime * result + originalTribe;
+	result = prime * result + seasonId;
+	result = prime * result + secondTribe;
+	result = prime * result + survivorId;
+	result = prime * result + thirdTribe;
 	return result;
 }
 /* (non-Javadoc)
@@ -163,37 +148,25 @@ public boolean equals(Object obj) {
 	if (getClass() != obj.getClass())
 		return false;
 	CastMember other = (CastMember) obj;
-	if (currenttribe == null) {
-		if (other.currenttribe != null)
-			return false;
-	} else if (!currenttribe.equals(other.currenttribe))
+	if (currentTribe != other.currentTribe)
 		return false;
-	if (dayvotedout != other.dayvotedout)
+	if (dayVotedOut != other.dayVotedOut)
 		return false;
-	if (fourthtribe == null) {
-		if (other.fourthtribe != null)
-			return false;
-	} else if (!fourthtribe.equals(other.fourthtribe))
+	if (fourthTribe != other.fourthTribe)
 		return false;
-	if (originaltribe == null) {
-		if (other.originaltribe != null)
-			return false;
-	} else if (!originaltribe.equals(other.originaltribe))
+	if (originalTribe != other.originalTribe)
 		return false;
-	if (seasonid != other.seasonid)
+	if (seasonId != other.seasonId)
 		return false;
-	if (secondtribe == null) {
-		if (other.secondtribe != null)
-			return false;
-	} else if (!secondtribe.equals(other.secondtribe))
+	if (secondTribe != other.secondTribe)
 		return false;
-	if (survivorid != other.survivorid)
+	if (survivorId != other.survivorId)
 		return false;
-	if (thirdtribe == null) {
-		if (other.thirdtribe != null)
-			return false;
-	} else if (!thirdtribe.equals(other.thirdtribe))
+	if (thirdTribe != other.thirdTribe)
 		return false;
 	return true;
 }
+
+
+
 }

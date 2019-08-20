@@ -22,11 +22,14 @@ public class JdbcCastMemberDAO implements CastMemberDAO {
 	
 	
 public List<CastMember> getAllCastMembers() {
-	List<CastMember> allCastMembers = new ArrayList<CastMember>();
-	 String sql = "SELECT * FROM castmembers";
-     SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
 
-     while(results.next()) {
+	List<CastMember> allCastMembers = new ArrayList<CastMember>();
+
+	String sql = "SELECT seasonid, survivorid, dayvotedout, originaltribe, currenttribe, secondtribe, thirdtribe, fourthtribe FROM castmembers";
+
+	SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
+
+    while(results.next()) {
          CastMember aCastMember = mapRowToCastMember(results);
          allCastMembers.add(aCastMember);
      }
@@ -35,7 +38,18 @@ public List<CastMember> getAllCastMembers() {
 	
 }
 private CastMember mapRowToCastMember(SqlRowSet SqlResults) {
+
 	CastMember aCastMember = new CastMember();
+
+	aCastMember.setSeasonId(SqlResults.getInt("seasonid"));
+	aCastMember.setSurvivorId(SqlResults.getInt("survivorid"));
+	aCastMember.setDayVotedOut(SqlResults.getInt("dayvotedout"));
+	aCastMember.setOriginalTribe(SqlResults.getInt("originaltribe"));
+	aCastMember.setSecondTribe(SqlResults.getInt("secondtribe"));
+	aCastMember.setThirdTribe(SqlResults.getInt("thirdtribe"));
+	aCastMember.setFourthTribe(SqlResults.getInt("fourthtribe"));
+	
 	return aCastMember;
 }
+
 }

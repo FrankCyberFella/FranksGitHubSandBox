@@ -1,0 +1,15 @@
+/Users/frankfella/BitBucketRepos/cyberginzo/FrankApps/SurvivorPoolCLE-POC-Java/src/main/java/com/survivorpoolcle/authentication/JwtAuthInterceptor.java
+/Users/frankfella/BitBucketRepos/cyberginzo/FrankApps/SurvivorPoolCLE-POC-Java/src/main/java/com/survivorpoolcle/controller/MvcController.java
+/Users/frankfella/BitBucketRepos/cyberginzo/FrankApps/SurvivorPoolCLE-POC-Java/src/main/java/com/survivorpoolcle/model/castmembers/CastMemberDAO.java
+/Users/frankfella/BitBucketRepos/cyberginzo/FrankApps/SurvivorPoolCLE-POC-Java/src/main/java/com/survivorpoolcle/authentication/JwtTokenHandler.java
+/Users/frankfella/BitBucketRepos/cyberginzo/FrankApps/SurvivorPoolCLE-POC-Java/src/main/java/com/survivorpoolcle/controller/ApiController.java
+/Users/frankfella/BitBucketRepos/cyberginzo/FrankApps/SurvivorPoolCLE-POC-Java/src/main/java/com/survivorpoolcle/model/castmembers/JdbcCastMemberDAO.java
+/Users/frankfella/BitBucketRepos/cyberginzo/FrankApps/SurvivorPoolCLE-POC-Java/src/main/java/com/survivorpoolcle/model/castmembers/CastMember.java
+/Users/frankfella/BitBucketRepos/cyberginzo/FrankApps/SurvivorPoolCLE-POC-Java/src/main/java/com/survivorpoolcle/authentication/RequestAuthProvider.java
+/Users/frankfella/BitBucketRepos/cyberginzo/FrankApps/SurvivorPoolCLE-POC-Java/src/main/java/com/survivorpoolcle/model/users/User.java
+/Users/frankfella/BitBucketRepos/cyberginzo/FrankApps/SurvivorPoolCLE-POC-Java/src/main/java/com/survivorpoolcle/authentication/AuthProvider.java
+/Users/frankfella/BitBucketRepos/cyberginzo/FrankApps/SurvivorPoolCLE-POC-Java/src/main/java/com/survivorpoolcle/authentication/UnauthorizedException.java
+/Users/frankfella/BitBucketRepos/cyberginzo/FrankApps/SurvivorPoolCLE-POC-Java/src/main/java/com/survivorpoolcle/authentication/UserCreationException.java
+/Users/frankfella/BitBucketRepos/cyberginzo/FrankApps/SurvivorPoolCLE-POC-Java/src/main/java/com/survivorpoolcle/authentication/PasswordHasher.java
+/Users/frankfella/BitBucketRepos/cyberginzo/FrankApps/SurvivorPoolCLE-POC-Java/src/main/java/com/survivorpoolcle/model/users/UserDao.java
+/Users/frankfella/BitBucketRepos/cyberginzo/FrankApps/SurvivorPoolCLE-POC-Java/src/main/java/com/survivorpoolcle/model/users/JdbcUserDao.java
