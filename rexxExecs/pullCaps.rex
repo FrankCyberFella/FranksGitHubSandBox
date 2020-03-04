@@ -7,7 +7,7 @@ pull weekNum .
 Say 'Enter Module Number'
 pull modNum .
 say '-----------------------------------------------------------------------------'
-path='~/Cohort-Stuff/Cohort-'CohortNum'/capstones/module-'modNum'/java-module-'modNum'-capstone-team-'      
+path='~/Cohort-Stuff/Cohort-'CohortNum'/Capstones/module-'modNum'/java-module-'modNum'-capstone-team-'      
 
 do i=0 to 8  
     repoPath = path||i
